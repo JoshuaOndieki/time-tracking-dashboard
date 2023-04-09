@@ -22,3 +22,241 @@
 
 }
 
+body {
+    background-color: var(--very-dark-blue);
+    color: aliceblue;
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    grid-template-rows: min-content;
+    margin: 0;
+    width: 100%;
+
+    
+}
+
+
+#time-tracking-dashboard {
+    display: grid;
+}
+
+#report-details-card {
+    background-color: var(--dark-blue);
+    display: grid;
+}
+
+.card {
+    align-items: end;
+    border-radius: 1.2rem;
+    display: grid;
+}
+
+#work-card {
+    background: url("assets/images/icon-work.svg") no-repeat top -2.5% right 5%;
+    background-color: var(--light-red-work);
+}
+
+#play-card {
+    background: url("assets/images/icon-play.svg") no-repeat top -2.5% right 5%;
+    background-color: var(--soft-blue-play);
+}
+
+#study-card {
+    background: url("assets/images/icon-study.svg") no-repeat top -2.5% right 5%;
+    background-color: var(--light-red-study);
+}
+
+#exercise-card {
+    background: url("assets/images/icon-exercise.svg") no-repeat top -2.5% right 5%;
+    background-color: var(--lime-green-exercise);
+}
+
+#social-card {
+    background: url("assets/images/icon-social.svg") no-repeat top -2.5% right 5%;
+    background-color: var(--violet-social);
+}
+
+#selfcare-card {
+    background: url("assets/images/icon-self-care.svg") no-repeat top -2.5% right 5%;
+    background-color: var(--soft-orange-self-care);
+}
+
+.card-details {
+    background-color: var(--dark-blue);
+    border-radius: 1.2rem;
+    display: grid;
+    height: 85%;
+    place-items: center;
+}
+
+.card-details>*{
+    width: 80%;
+}
+
+.card-header {
+    align-items: center;
+    display: grid;
+    font-size: 1.3rem;
+    grid-template-columns: 90% 10%;
+}
+
+
+#report-personal-info {
+    background-color: var(--blue);
+    border-radius: 1.2rem;
+    display: grid;
+}
+
+#report-nav {
+    color: var(--desaturated-blue);
+    display: grid;
+    font-size: 1.3rem;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.selected-report-nav {
+    color: aliceblue;
+}
+
+.attribution {
+    color: aliceblue;
+}
+
+.attribution a {
+    color: aliceblue;
+}
+
+#profile-image {
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 50%;
+}
+
+
+.previous-card-stat {
+    color: var(--pale-blue);
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+
+/* Desktop layout  */
+
+@media (min-width: 768px) {
+
+    body {
+        align-items: center;
+        display: grid;
+        height: 100dvh;
+        place-items: center;
+    }
+    
+    
+    #time-tracking-dashboard {
+        grid-row-gap: 12%;
+        grid-template-columns: repeat(4, 22%);
+        height: 50%;
+        justify-content: space-between;
+        width: 75%;
+    }
+    
+    #report-details-card {
+        align-items: center;
+        grid-row: 1 / span 2;
+        grid-template-rows: 2fr 1fr;
+    }
+    
+    
+    .card-details {
+        grid-template-rows: 30% 50% 10%;
+    }
+    
+    .card:not(#report-details-card) {
+        aspect-ratio: 1/1;
+    }
+    
+    #report-personal-info {
+        height: 100%;
+    }
+    
+    #report-nav {
+        height: 70%;
+    }
+    
+    
+    #report-details-card>* {
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+
+    p span, .card-stat {
+        font-size: 2.5rem;
+    }
+    
+    
+}
+
+
+
+/* Mobile layout */
+@media (max-width: 767px) {
+
+    #time-tracking-dashboard {
+        grid-row-gap: 2%;
+        margin: 3%;
+    }
+
+    .card-details {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 50%;
+    }
+
+    .card-details {
+        align-items: baseline;
+        width: 100%;
+    }
+
+    .card-header {
+        width: 90%;
+    }
+
+    #report-details-card {
+        align-items: center;
+        /* grid-row: 1 / span 2; */
+        grid-template-rows: 3fr 1fr;
+    }
+
+
+    #report-personal-info {
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+        padding: 10% 0;
+    }
+
+    #profile-image {
+        justify-self: center;
+    }
+
+
+    #report-nav {
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    .card-header {
+        grid-column: 1 / span 2;
+    }
+
+    .card-title {
+        width: 100%;
+    }
+
+    p span, .card-stat {
+        font-size: x-large;
+    }
+}
