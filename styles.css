@@ -23,16 +23,12 @@
 }
 
 body {
-    /* align-items: center; */
     background-color: var(--very-dark-blue);
     color: aliceblue;
-    /* display: grid; */
     font-family: "Rubik", sans-serif;
     font-weight: lighter;
     grid-template-rows: min-content;
-    /* height: 100dvh; */
     margin: 0;
-    /* place-items: center; */
     width: 100%;
 
     
@@ -41,19 +37,11 @@ body {
 
 #time-tracking-dashboard {
     display: grid;
-    /* grid-row-gap: 12%; */
-    /* grid-template-columns: repeat(4, 22%); */
-    /* height: 50%; */
-    /* justify-content: space-between; */
-    /* width: 75%; */
 }
 
 #report-details-card {
-    /* align-items: center; */
     background-color: var(--dark-blue);
     display: grid;
-    /* grid-row: 1 / span 2; */
-    /* grid-template-rows: 2fr 1fr; */
 }
 
 .card {
@@ -96,7 +84,6 @@ body {
     background-color: var(--dark-blue);
     border-radius: 1.2rem;
     display: grid;
-    /* grid-template-rows: 30% 40% 10%; */
     height: 85%;
     place-items: center;
 }
@@ -112,22 +99,17 @@ body {
     grid-template-columns: 90% 10%;
 }
 
-.card:not(#report-details-card) {
-    /* aspect-ratio: 1/1; */
-}
 
 #report-personal-info {
     background-color: var(--blue);
     border-radius: 1.2rem;
     display: grid;
-    /* height: 100%; */
 }
 
 #report-nav {
     color: var(--desaturated-blue);
     display: grid;
     font-size: 1.3rem;
-    /* height: 70%; */
 }
 
 .clickable {
@@ -150,12 +132,6 @@ body {
     border: 4px solid white;
     border-radius: 50%;
     width: 50%;
-}
-
-
-#report-details-card>* {
-    /* padding-left: 10%; */
-    /* padding-top: 10%; */
 }
 
 
@@ -231,8 +207,6 @@ body {
 
     #time-tracking-dashboard {
         grid-row-gap: 2%;
-        /* grid-template-columns: 90%;
-        width: 90%; */
         margin: 3%;
     }
 
@@ -261,7 +235,6 @@ body {
         align-items: center;
         grid-template-columns: 1fr 2fr;
         padding: 10% 0;
-        /* place-items: center; */
     }
 
     #profile-image {
@@ -274,10 +247,6 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
     }
-
-    .card-stat, .previous-card-stat {
-    }
-
 
     .card-header {
         grid-column: 1 / span 2;
