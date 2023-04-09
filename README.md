@@ -1,6 +1,6 @@
-# THE-Jitu
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b2ead42d866d47da90ac89b76a2fd79e)](https://app.codacy.com/gh/JoshuaOndieki/time-tracking-dashboard/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7f8fc971651342dcad54fd3363fea1cd?branch=time-tracking-dashboard)](https://app.codacy.com/gh/JoshuaOndieki/THE-Jitu/dashboard?branch=time-tracking-dashboard&utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+# THE-Jitu
 
 Tasks completed at THE Jitu Software Developer Training
 
