@@ -154,7 +154,7 @@ body {
 
 /* Desktop layout  */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     body {
         align-items: center;
@@ -167,8 +167,9 @@ body {
     #time-tracking-dashboard {
         grid-row-gap: 2rem;
         grid-template-columns: repeat(4, 22%);
-        height: 50%;
         justify-content: space-between;
+        /* height: 50%; */
+        margin-top: 5%;
         width: 75%;
     }
     
@@ -211,7 +212,7 @@ body {
 
 
 /* Mobile layout */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
 
     #time-tracking-dashboard {
         grid-row-gap: 2rem;
